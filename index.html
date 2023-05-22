@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+
+	
+
+
+	<title>Flight Pool</title>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class = "container">
+		<header>
+			<a href="index.html"><image class="test-0-logo" src="images/logo.svg"></image></a>
+			<div class = "nav">
+				<div class ="test-0-nav-1"><a href="#acttion">Акции</a></div>
+				<div class="test-0-nav-2"><a href="#find">Поиск</a></div>
+				<div class="test-0-nav-4"><a href="login.html">Личный кабинет</a></div>
+				<div class="test-0-nav-3"><a href="register.html">Регистрация</a></div>
+				
+			</div>
+
+		</header>
+	</div>
+
+	<section class="bron">
+		<h2 class="textact">Система накоплений бронирования</h2>
+		<div class="cards">
+			<a  class="card1">
+				<image class = "card-img" src = "images/promotion3.jpg"></image>
+				<div class = "card-text">
+					<div class = "card-heiden">
+						
+					</div>
+					<div>
+						<p>Если у вас набрано более 50% бронирования,<br> то для вас действует скидка 30% на все полеты</p>
+					</div>
+				</div>
+				
+
+			</a>
+			<a  class="card2">
+				<image class = "card-img" src = "images/promotion2.jpg"></image>
+				<div class = "card-text">
+					<div class = "card-heiden">
+						
+					</div>
+					<div>
+						<p>Если у вас набрано менее 50% и более 30% бронирования,<br> то для вас действует скидка 15% на все полеты</p>
+					</div>
+				</div>
+				
+
+			</a>
+			<a  class="card3">
+				<image class = "card-img" src = "images/promotion1.jpg"></image>
+				<div class = "card-text">
+					<div class = "card-heiden">
+						
+					</div>
+					<div>
+						<p>Если у вас набрано менее 30% <br> бронирования,то для вас действует скидка 10% на все полеты</p>
+					</div>
+				</div>
+				
+
+			</a>
+
+		</div>
+		
+	</div>
+</section>
+<h2>Наши самолеты и экипаж</h2>
+<div class="slider">
+	<img class="photo_slider" src="images/person1.jpg" alt="">
+	<img class="photo_slider" src="images/airb3.png" alt="">
+	<img class="photo_slider" src="images/airb1.jpeg" alt="">
+	<img class="photo_slider" src="images/person2.jpg" alt="">
+	<img class="photo_slider" src="images/airb2.jpg" alt=""><a name= "find"></a>
+</div>
+<h2>Авиабилеты</h2>
+
+<form class="form" action="search.html">
+	<div class="forms">
+		<input type="text" placeholder = "Откуда (Шереметьево)" required class="test-0-fd"></input>
+		<input type="text" placeholder = "Куда (Анталия)" required class="test-0-fa"></input>
+		<input type="text" placeholder = "Туда (12.12.24)" required class="test-0-fdt"></input>
+		<input type="text" placeholder = "Обратно (12.01.25)" required class="test-0-fat"></input>
+		<input type="number"  id="numberr" placeholder = "Кол-во пассажиров" required class="test-0-fnp" onblur="checkkolvo()"></input>
+		
+		<button class="test-0-fbs">Поиск билетов</button>
+		<div id="checkk">
+			
+		</div>
+	</div>	<a name= "acttion"></a>
+
+	
+
+
+	
+
+</form>
+<section class="action">
+	<h2 class="textact">Акции на полеты</h2>
+	<div class="actions">
+		<a  class="act1">
+			<image class = "test-0-ai" src = "images/promotion1.jpg"></image>
+			<div >
+				<p class="test-0-an">Возврат и замена Ваших билетов</p>
+				<div class = "test-0-ad ">
+					<p>Пандемия изменила планы многих путешественников, но мы знаем, что это не будет длиться вечно</p>
+				</div>
+				
+			</div><button class="test-0-abm" id="action1"> Просмотреть акцию</button>
+		</a>
+		<a  class="act2">
+			<image class = "test-0-ai" src = "images/promotion2.jpg"></image>
+			<div >
+				<p class="test-0-an">Лучшие предложения</p>
+				<div class = "test-0-ad ">
+					<p>Снова увидеть улицы, которые были свидетелями столького. </p>
+				</div>
+				
+			</div><button class="test-0-abm" id="action2"> Просмотреть акцию</button>
+		</a>
+		<a  class="act3">
+			<image class = "test-0-ai" src = "images/promotion3.jpg"></image>
+			<div >
+				<p class="test-0-an"><b>Увидимся почаще</b></p>
+				<div class = "test-0-ad ">
+					<p>С начала января мы расширяем географию полетов по России, чтобы вы могли чаще видеться со своими близкими.</p>
+				</div>
+				
+			</div>
+			<button class="test-0-abm" id="action3"> Просмотреть акцию</button>
+		</a>
+		<a  class="act4">
+			<image class = "test-0-ai" src = "images/promotion4.jpg"></image>
+			<div >
+				<p class="test-0-an"><b>Все снова включилось</b></p>
+				<div class = "test-0-ad ">
+					<p>С 10 августа мы возобновим полеты в Турцию.</p>
+				</div>
+				
+			</div><button class="test-0-abm" id="action4"> Просмотреть акцию</button>
+		</a>
+
+	</div>
+	
+</div>
+</section>
+<div class="modal">
+	<div class="modal-dialog">
+		<div class="modal-header">
+			<h3 class="modal-title">Возврат и замена Ваших билетов</h3>
+			<button class="close">&times;</button>
+		</div>
+		<div class="modal-body">
+			Пандемия изменила планы многих путешественников, но мы знаем, что это не будет длиться вечно. Как только все это закончится, мы продолжим исследовать этот мир так, как привыкли. Специальные правила, разработанные для этой сложной ситуации, помогут вам отменить свою поездку или отложить ее на более поздний срок.
+
+		</div>
+		
+	</div>
+</div>
+
+<div class="modal2">
+	<div class="modal-dialog">
+		<div class="modal-header">
+			<h3 class="modal-title">Лучшие предложения</h3>
+			<button class="close2">&times;</button>
+		</div>
+		<div class="modal-body">
+			Снова увидеть улицы, которые были свидетелями столького. Обнять своих любимых и оглянуться назад, чтобы увидеть, через что вы прошли. И думать о новых мечтах, которые будут такими особенными!
+
+		</div>
+		
+	</div>
+</div>
+<div class="modal3">
+	<div class="modal-dialog">
+		<div class="modal-header">
+			<h3 class="modal-title">Увидимся почаще</h3>
+			<button class="close3">&times;</button>
+		</div>
+		<div class="modal-body">
+			С начала января мы расширяем географию полетов по России, чтобы вы могли чаще видеться со своими близкими. Выберите нашу компанию, чтобы лететь туда, где вас всегда ждут.
+
+		</div>
+		
+	</div>
+</div>
+
+<div class="modal4">
+	<div class="modal-dialog">
+		<div class="modal-header">
+			<h3 class="modal-title">Все снова включилось</h3>
+			<button class="close4">&times;</button>
+		</div>
+		<div class="modal-body">
+			С 10 августа мы возобновим полеты в Турцию. Рейсы из Москвы в Анталию будут выполняться ежедневно два раза в день, а рейсы по маршруту Москва-Даламан будут выполняться от трех до семи раз в неделю.
+
+		</div>
+		
+	</div>
+</div>
+
+<div class="reviews">
+	<h2 class="otz">Отзывы</h2>
+	<div class="review">
+		<img src="images/revies1.jpg" class="photo-ot"></img>
+		<p>
+			Это самая лучшая авикомпания которой только мог летать. Всем советую очень комфортно и приятный персонал.
+		</p>
+	</div>
+	<div class="review">
+		<img src="images/revies2.jpg" class="photo-ot"></img>
+		<p>
+			Понравился сервис, осуществили очень кофмортный перелет.
+		</p>
+	</div>
+	<div class="review">
+		<img src="images/revies3.jpg" class="photo-ot"></img>
+		<p>
+			Не понравилось, приняли за наркобарона. Лучше бы летел и покупал билеты через AviaSales.
+		</p>
+	</div>
+	<div class="review">
+		<img src="images/revies4.jpg" class="photo-ot"></img>
+		<p>
+			Пилот привык к аппарату, не перегазовывал и мы летели с кайфом.
+		</p>
+	</div>
+	<div class="review">
+		<img src="images/revies5.jpg" class="photo-ot"></img>
+		<p>
+			Приятный сервис, как только посадили предложили сладкое.  
+		</p>
+	</div>
+	<div class="review">
+		<img src="images/revies6.jpg" class="photo-ot"></img>
+		<p>
+			Очень страшно было, отвратительное поведения стюардессы Галины Михайловны.
+		</p>	
+	</div>
+</div>
+
+<h2>Оформите подписку что бы увидеть закрытые акции</h2>
+<form class="zform">
+	<input type="mail" placeholder = "Введите вашу почту" required class="test-0-sie"></input>
+	<button class="test-0-sbs">Подписаться</button>
+</form>
+
+<footer class="footerdop">
+	<div class="containerf">
+		<div class="footer-block">
+			<nav class="footer-nav">
+				<a href="index.html" class="footer-link">На главную</a>
+				<a href="register.html" class="footer-link">Зарегистрироваться</a>
+				<a href="login.html" class="footer-link">Войти</a>
+				<a href="#" class="footer-link">Контакты</a>
+				<a href="#" class="footer-link">Новости</a>
+				<a href="index.html" class="footer-link">Вернуться</a>
+				<a href="#" class="footer-link">Поддержка</a>
+			</nav>
+			<div class="social-links">
+				<a href="#" class="social-link"><img src="images/inst.svg" alt="instagram" class="pod"></a>
+				<a href="#" class="social-link"><img src="images/facebook .svg" alt="facebook" class="pod"></a>
+				<a href="#" class="social-link"><img src="images/vk.svg" alt="vk" class="pod"></a>
+			</div>
+			<div class="phone">
+				<p class="text-phone">Телефон для связи</p>
+				<a href="#" class="test-0-phone">8 (800) 100-10-10</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="js/action.js"></script>
+<script src="js/finder.js"></script>
+</body>
+</html>
